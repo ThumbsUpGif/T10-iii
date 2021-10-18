@@ -1,0 +1,43 @@
+
+.photo--curtain {
+    position: relative;
+    background-image: url('media/photo/curtain.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    z-index: 5;
+}
+
+
+
+.photo--leaning {
+    background-image: url('media/photo/leaning.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    z-index: 5;
+}
+
+.photo--injection {
+    position: relative;
+    background-image: url('media/photo/injection.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    z-index: 5;
+}
+
+.photo--beanie {
+    background-image: url('media/photo/beanie.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    z-index: 5;
+}
+
+
+.photo--skateboard {
+    background-image: url('media/photo/skateboard.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+}
+
+
+

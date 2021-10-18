@@ -1,14 +1,138 @@
-
 * {
     box-sizing: border;
     margin: 0;
     padding: 0;
 }
 
-:root {}
-
-body {
-    background-color: ;
+:root {
     font-size: 16px;
 }
 
+body {
+    background-color: #473234;
+
+}
+
+.radial-gradient {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* overflow: hidden; */
+    background-image: radial-gradient(#573D3E 0%, #473234 40%, #372528 100%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.spacer {
+    width: 20vw;
+    height: 2px;
+    background-color: #fff;
+    /* margin-bottom: 1.5vmax; */
+}
+
+/* Section 1 */
+
+.hero {
+    position: relative;
+    top: 0%;
+    height: 100vh;
+    /* height: 400px; */
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.header {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    padding: 2vh 4vh;
+}
+
+.slogan-1 {
+
+    z-index: 10;
+}
+
+.slogan-2 {
+
+    z-index: 10;
+}
+
+.lead {
+    z-index: 10;
+}
+
+
+/* Section 2 */
+
+
+
+.when {
+    position: relative;
+    z-index: 0;
+}
+
+
+/* Section 3 */
+
+.zambia {
+    position: relative;
+    z-index: 0;
+}
+
+
+/* Section 4 */
+
+.you {
+    position: relative;
+    z-index: 0;
+}
+
+
+/* Section 5 */
+
+.results {
+    position: relative;
+    z-index: 0;
+}
+
+ul {
+    list-style: outside none none;
+}
+
+.results .stats li {
+    /* padding-top: 1rem; */
+    max-width: 560px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.results .stats p {
+    width: 80%;
+    align-self: center;
+}
+
+.results .stats img{
+    height: 4rem;
+    width: 20%;
+    align-self: center;
+    opacity: 0;
+}
+
+
+
+
+/*JS functionality*/
+
+.scroll-arrow {
+    z-index: 10;
+}
+
+.js-scroll {}

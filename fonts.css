@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    background-color: #111;
+    /* padding: 1vmin 0 1vmin 3vmin; */
+
+}
+
+.lead h2 {
+font-family: 'Public Sans', sans-serif;
+color: #fff;
+
+font-weight: 100;
+line-height: 1.4;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    font-size: 1.62rem;
+    /* letter-spacing: 0.05rem; */
+    /* margin-bottom: 0.5vmax; */
+    padding: 3vmin 0 1vmin 3vmin;
+
+}
+
+h4 {
+    font-family: 'Public Sans', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 18px;
+
+}
+
+p {
+font-family: 'Public Sans', sans-serif;
+color: #fff;;
+font-weight: 200;
+line-height: 1.4;
+padding: 3vmin 0 1vmin 3vmin;
+}
+
+p strong {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    /* padding: 3vmin 0 1vmin 3vmin; */
+}
+
+blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    font-weight: 200;
+}

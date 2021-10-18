@@ -1,0 +1,75 @@
+
+
+
+/* ----- General ----- */
+
+.animation-subheading{
+    opacity: 0;
+}
+
+@keyframes animation-subheading {
+    from {
+        transform: translateY(-5vw);
+        opacity: 0;
+    }
+
+    to  {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* ------Section 5------*/
+
+
+.animation-results {
+    opacity: 0;
+}
+
+
+@keyframes animation-results {
+    from {
+        /* transform: translateY(-20px); */
+        opacity: 0;
+    }
+
+    to  {
+        /* transform: translate(0); */
+        opacity: 1;
+    }
+}
+
+
+.animation-list-item{
+    opacity: 0;
+}
+
+
+@keyframes animation-list-item {
+    from {
+        transform: translatex(-2vw);
+        opacity: 0;
+    }
+
+    to  {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes results-svg {
+    0% {
+        /* transform: translateY(-300px);  */
+        opacity: 0.9;
+        transform: scale(3);
+    }
+
+    100% {
+        /* transform: translateY(0px); */
+        opacity: 1;
+        transform: scale(1);
+    }
+}
