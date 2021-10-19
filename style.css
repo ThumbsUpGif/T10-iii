@@ -134,7 +134,7 @@ ul {
 }
 
 .video2 {
-    
+   z-index: 0; 
 }
 
 
@@ -144,4 +144,6 @@ ul {
     z-index: 10;
 }
 
-.js-scroll {}
+.js-scroll {
+    z-index:5;
+}
