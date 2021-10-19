@@ -9,7 +9,7 @@
 /*---------Section 1--------*/
 
 .hero {
-    max-height: 80vw;
+    max-height: 75vw;
 }
 
 h1 {
@@ -68,7 +68,7 @@ h1 {
 
 .when {
     height: 100vh;
-    max-height: 80vw;
+    max-height: 75vw;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 8.33vw);
@@ -106,7 +106,7 @@ h1 {
 .zambia {
     background-color: #111;
     height: 100vh;
-    max-height: 80vw;
+    max-height: 75vw;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 8.33vw);
@@ -132,7 +132,7 @@ blockquote {
 
 .you {
     height: 100vh;
-    max-height: 80vw;
+    max-height: 70vw;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 8.33vw);
@@ -179,4 +179,23 @@ blockquote {
 
 ul {
     padding-left: 4vw;
+}
+
+
+/*----------Kenya----------------*/
+
+.kenya {
+    height: 100vh;
+    max-height: 70vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.video2 {
+    grid-row: 1 / 7;
+    grid-column: 9 / 13;
+    display: flex;
+    align-items: flex-end;
 }

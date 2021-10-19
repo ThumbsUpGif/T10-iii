@@ -1,7 +1,16 @@
 @media only screen and (max-width: 520px) {
 
 
-/*---------Section 1--------*/
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 19px;
+    }
+
+
+    /*---------Section 1--------*/
 
 
 
@@ -9,11 +18,11 @@
 
 
 
-.scroll-arrow-1 {
-display: block;
-}
+    .scroll-arrow-1 {
+        display: block;
+    }
 
-/*---------Section 2--------*/
+    /*---------Section 2--------*/
 
 
 }

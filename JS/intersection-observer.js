@@ -33,30 +33,30 @@ subheadings.forEach(subheading => {
 
 
 
-// Section 5
+// // Section 5
 
 
-//// Results //////
+// //// Results //////
 
-const results = document.querySelectorAll('.animation-results')
+// const results = document.querySelectorAll('.animation-results')
 
-observer = new IntersectionObserver((entries) => {
-    console.log(entries);
+// observer = new IntersectionObserver((entries) => {
+//     console.log(entries);
 
-    entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-            entry.target.style.animation =
-                `animation-results 4s ${entry.target.dataset.delay} forwards ease`
-            observer.unobserve(entry.target)
-        } else {
-            entry.target.style.animation = `none`;
-        }
-    })
-})
+//     entries.forEach(entry => {
+//         if (entry.intersectionRatio > 0) {
+//             entry.target.style.animation =
+//                 `animation-results 4s ${entry.target.dataset.delay} forwards ease`
+//             observer.unobserve(entry.target)
+//         } else {
+//             entry.target.style.animation = `none`;
+//         }
+//     })
+// })
 
-results.forEach(result => {
-    observer.observe(result)
-})
+// results.forEach(result => {
+//     observer.observe(result)
+// })
 
 
 

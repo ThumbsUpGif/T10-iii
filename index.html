@@ -238,20 +238,26 @@
 
                     <div>
                         <p>
-                            <span class="animation-results" data-delay="0.3s">Rest assured that your contribution couldn't go </span>
-                            <span class="animation-results" data-delay="0.4s">to a more dedicated and passionate group of people. In 2020, </span>
-                            <span class="animation-results" data-delay="0.5s">as the pandemic was raging across the world, </span>
-                            <span class="animation-results" data-delay="0.6s">The Covid-19 Solidarity Response Fund</span>
-                            <span class="animation-results" data-delay="0.7s">fought an all out battle against the virus.
+                            <span class="animation-results" data-delay="0.3s">Rest assured that your contribution
+                                couldn't go </span>
+                            <span class="animation-results" data-delay="0.4s">to a more dedicated and passionate group
+                                of people. In 2020, </span>
+                            <span class="animation-results" data-delay="0.5s">as the pandemic was raging across the
+                                world, </span>
+                            <span class="animation-results" data-delay="0.6s">The Covid-19 Solidarity Response
+                                Fund</span>
+                            <span class="animation-results" data-delay="0.7s">fought an all out battle against the
+                                virus.
                             </span>
                             <br><br>
-                            <span class="animation-results" data-delay="0.9s">Key performance metrics include the following
+                            <span class="animation-results" data-delay="0.9s">Key performance metrics include the
+                                following
                                 achievements in 2020: </span>
                         </p>
-                       
+
                     </div>
-    
-    
+
+
                     <ul class="stats">
                         <li class="animation-list-item" data-delay="2.0s">
                             <img src="media/svg/ppe.svg" alt="PPE symbol" class="animation-icons" data-delay="2.1s">
@@ -260,7 +266,8 @@
                             </p>
                         </li>
                         <li class="animation-list-item" data-delay="2.8s">
-                            <img src="media/svg/test.svg" alt="swab test symbol" class="animation-icons" data-delay="2.9s">
+                            <img src="media/svg/test.svg" alt="swab test symbol" class="animation-icons"
+                                data-delay="2.9s">
                             <p>
                                 <strong>19 million</strong> Covid-19 tests shipped to health centres across the world.
                             </p>
@@ -288,11 +295,54 @@
 
             </section><!-- results -->
 
+            <section class="kenya">
+
+
+                <div class="video2">
+                    <video height="100%" width="100%" autoplay loop muted>
+                        <source src="media/video/rub.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
+
+            </section>
+            <!-- kenya -->
+
+
         </div> <!-- phone-viewport-grid -->
 
     </div><!-- max-width -->
 
     <script src="js/scroll.js"></script>
+    </script>
+
+    <script src="js/intersection-observer.js"></script>
+
+
+
+    <script>
+        // Section 5
+        //// Results //////
+
+        const results = document.querySelectorAll('.animation-results')
+
+        observer = new IntersectionObserver((entries) => {
+            console.log(entries);
+
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.animation =
+                        `animation-results 4s ${entry.target.dataset.delay} forwards ease`
+                    observer.unobserve(entry.target)
+                } else {
+                    entry.target.style.animation = `none`;
+                }
+            })
+        })
+
+        results.forEach(result => {
+            observer.observe(result)
+        })
 
     </script>
 
