@@ -9,8 +9,8 @@
 
 @keyframes animation-subheading {
     from {
-        transform: translateY(-1vw);
-        opacity: 0.6;
+        transform: translateY(-1.8vw);
+        opacity: 0.4;
     }
 
     to  {
@@ -19,8 +19,46 @@
     }
 }
 
+.animation-photo {
+    opacity: 0.6;
+}
+
+@keyframes animation-photo {
+    from {
+        background-size: 104% 104%;
+        opacity: 0.6;
+    }
+
+    to  {
+        background-size: 100% 100%;
+        opacity: 1;
+    }
+}
+
+.animation-photo-landscape {
+    opacity: 0.6;
+}
+
+@keyframes animation-photo-landscape {
+    from {
+        background-size: 115% 115%;
+        transform: translateX(-7%);
+        opacity: 0.6;
+    }
+
+    to  {
+        background-size: 100% 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 
+/*---------Section 2 - When -----------*/
+
+.animation-when {
+    opacity: 0;
+}
 
 /* ------Section 5------*/
 
@@ -71,5 +109,26 @@
         /* transform: translateY(0px); */
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+
+/* ------ Dontaions ------*/
+
+
+.animation-donation {
+    opacity: 0;
+}
+
+
+@keyframes animation-donation {
+    from {
+        /* transform: translateY(-20px); */
+        opacity: 0;
+    }
+
+    to  {
+        /* transform: translate(0); */
+        opacity: 1;
     }
 }

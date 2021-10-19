@@ -1,0 +1,326 @@
+@media only screen and (min-width: 521px) and (max-width: 960px) {
+
+
+h3 {
+    font-size: 1.4rem;
+}
+    
+
+/*---------Section 1 - Hero --------*/
+
+.hero {
+    z-index: 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+    padding: 1vmin 0 1vmin 3vmin;
+}
+
+.header {
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 13;
+
+}
+
+.slogan-1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 8;
+}
+
+.slogan-2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 11;
+    transform: translate(2vw, -8vh);
+}
+
+.lead {
+    background-color: #fff;
+    grid-row: 6 / 7;
+    grid-column: 7 / 12;
+    transform: translateY(-4vh);
+    height: 10vh;
+}
+
+.lead h2 {
+    font-size: 18px;
+    padding: 2vw 2vh;
+    color: #111;
+    font-weight: 400;
+}
+
+
+.photo--curtain {
+    grid-row: 4 / 7;
+    grid-column: 1 / 13;
+    transform: translateY(-12vh);
+}
+
+.photo--injection {
+    display: none;
+}
+
+.scroll-arrow-white {
+    background-image: url(media/svg/down-arrow-white-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center top;
+    grid-row: 6 / 7;
+    grid-column: 7 / 8;
+    transform: translate(-4vw, 10vh);
+}
+
+.scroll-arrow-white:hover {
+    filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, .7));
+}
+
+.scroll-arrow-white a {
+    display: block;
+    height: 100%;
+    width: 200%;
+    transform: translate(-25%, -50%);
+}
+
+
+/*---------Section 2 - About --------*/
+
+.when {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(11, 8.33vw);
+}
+
+.photo--injection-tablet {
+    grid-row: 2 / 10;
+    grid-column: 1 / 5;
+    transform: translate(0vw, 4vh);
+}
+
+.photo--leaning {
+    display: none;
+}
+
+
+.when__text-background{
+    /* background-image: linear-gradient( 170deg, hsla(350, 20%, 18%, 100) 0%, hsla(350, 20%, 18%, 0) 100%); */
+    grid-row: 2 / 6;
+    grid-column: 6 / 13;
+    /* transform: translate(0vw, 6vh); */
+}
+
+.when__text-background h3 {
+    /* padding: 2vw 6vw; */
+}
+
+.when__text-background p {
+    max-width: 520px;
+    /* padding: 2vw 6vw; */
+}
+
+.spacer {
+    z-index: 0;
+    /* transform: translateX(-1vw); */
+}
+
+.when .scroll-arrow-white {
+    grid-row: 10 / 12;
+    grid-column: 6 / 7;
+    transform: scale(1);
+    transform: translateX(4vw);
+}
+
+/*---------Section 3 - Zambia --------*/
+
+.zambia {
+    background-color: #111;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(8, 8.33vw);
+}
+
+.video1 {
+    grid-row: 1 / 7;
+    grid-column: 1 / 5;
+    transform: translateY(8vw);
+}
+
+.quote1 {
+    grid-row: 2 / 6;
+    grid-column: 6 / 12;
+}
+
+blockquote {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}    
+
+.zambia .scroll-arrow-white {
+    grid-row: 8 / 9;
+    grid-column: 6 / 7;
+    transform: scale(1);
+    transform: translateX(4vw);
+}
+
+/*---------Section 4 - You --------*/
+
+.you {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(9, 8.33vw);
+}
+
+.you__text-background {
+
+    grid-row: 2 / 7;
+    grid-column: 3 / 11;
+}
+
+.you__text-background h3 {
+    padding: 2vw 6vw;
+}
+
+.you__text-background p {
+    max-width: 520px;
+    padding: 2vw 6vw;
+}
+
+.photo--beanie {
+    display: none;
+}
+
+.you .scroll-arrow-white {
+    grid-row: 9 / 10;
+    grid-column: 6 / 7;
+    transform: scale(1);
+    transform: translateX(4vw);
+}
+
+
+/*---------Section 4 - Results --------*/
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(18, 8.33vw);
+}
+
+.results-text {
+    grid-row: 2 / 7;
+    grid-column: 3 / 10;
+    /* transform: translate(0vw, 4vh); */
+}
+
+ul {
+    padding-left: 4vw;
+}
+
+.results .stats li {
+    padding-top: 2rem;
+}
+
+
+.results .scroll-arrow-white {
+display: none;
+}
+
+.results .scroll-arrow-white-tablet {
+    background-image: url(media/svg/down-arrow-white-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center top;
+    grid-row: 16 / 17;
+    grid-column: 6 / 7;
+    transform: scale(1);
+    transform: translateX(4vw);
+}
+
+
+.scroll-arrow-white-tablet:hover {
+    filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, .7));
+}
+
+.scroll-arrow-white-tablet a {
+    display: block;
+    height: 100%;
+    width: 200%;
+    transform: translate(-25%, -50%);
+}
+
+
+/*--------- Section 5 - Kenya --------------*/
+
+.kenya {
+    display: none;
+}
+
+.kenya-tablet {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(7, 8.33vw);
+}
+
+.video2 {
+    grid-row: 1 / 7;
+    grid-column: 9 / 13;
+    transform: translateY(4vw);
+}
+
+.quote2 {
+    grid-row: 4 / 7;
+    grid-column: 2 / 7;
+}
+
+.quote2 blockquote {
+    color: #111;
+}
+
+.quote2 h3 {
+    color: #111;
+}
+
+/*--------- Section 7 - Donate --------------*/
+
+
+.donate {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(18, 8.33vw);
+}
+
+.photo--syringe {
+    grid-row: 1 / 7;
+    grid-column: 1 / 13;
+    /* transform: translateY(-6vh); */
+}
+
+.donate__text-background {
+    grid-row: 10 / 16;
+    grid-column: 2 / 10;
+    transform: translate(4vw, -6vh);
+}
+
+.donate__text-background h3 {
+    padding: 2vw 6vw;
+}
+
+.donate__text-background p {
+    max-width: 520px;
+    padding: 2vw 6vw;
+}
+
+.donate .scroll-arrow-white {
+    grid-row: 15 / 16;
+    grid-column: 6 / 7;
+    transform: scale(1);
+    transform: translateX(4vw);
+}
+
+
+/*--------- Section 8 - About ------------*/
+
+
+
+}

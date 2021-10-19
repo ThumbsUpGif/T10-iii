@@ -33,6 +33,8 @@ a {
     /* margin-bottom: 1.5vmax; */
 }
 
+
+
 /* Section 1 */
 
 .hero {
@@ -136,6 +138,21 @@ ul {
 .video2 {
    z-index: 0; 
 }
+
+
+/*Donate*/
+
+
+/*About*/
+
+.spacer-black {
+    width: 20vw;
+    height: 2px;
+    background-color: #111;
+    /* margin-bottom: 1.5vmax; */
+}
+
+
 
 
 /*JS functionality*/

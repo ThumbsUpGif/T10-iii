@@ -27,16 +27,60 @@ subheadings.forEach(subheading => {
 })
 
 
+///// Photo ////
+const photos = document.querySelectorAll('.animation-photo')
+
+observer = new IntersectionObserver((entries) => {
+    console.log(entries);
+
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.style.animation =
+                `animation-photo 1.2s ${entry.target.dataset.delay} forwards ease`
+                observer.unobserve(entry.target)
+        } else {
+            entry.target.style.animation = `none`;
+        }
+    })
+})
+
+photos.forEach(photo => {
+    observer.observe(photo)
+})
+
+
+
 
 // Section 1
 
 
+// Section When
+
+const whens = document.querySelectorAll('.animation-when')
+
+observer = new IntersectionObserver((entries) => {
+    console.log(entries);
+
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.style.animation =
+                `animation-results 2s ${entry.target.dataset.delay} forwards ease`
+            observer.unobserve(entry.target)
+        } else {
+            entry.target.style.animation = `none`;
+        }
+    })
+})
+
+whens.forEach(when => {
+    observer.observe(when)
+})
 
 
-// // Section 5
+////// Section 5
 
 
-// //// Results //////
+////// Results //////
 
 const results = document.querySelectorAll('.animation-results')
 
@@ -46,7 +90,7 @@ observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
-                `animation-results 4s ${entry.target.dataset.delay} forwards ease`
+                `animation-results 1s ${entry.target.dataset.delay} forwards ease`
             observer.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
@@ -107,3 +151,28 @@ if (entry.intersectionRatio > 0) {
 icons.forEach(icon => {
 observer.observe(icon)
 })       
+
+
+////// Section 6 - Donation
+
+const donations = document.querySelectorAll('.animation-donation')
+
+observer = new IntersectionObserver((entries) => {
+    console.log(entries);
+
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.style.animation =
+                `animation-donation 0.6s ${entry.target.dataset.delay} forwards ease`
+            observer.unobserve(entry.target)
+        } else {
+            entry.target.style.animation = `none`;
+        }
+    })
+})
+
+donations.forEach(donation => {
+    observer.observe(donation)
+})
+
+

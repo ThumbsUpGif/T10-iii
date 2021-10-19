@@ -24,12 +24,29 @@
     z-index: 5;
 }
 
-.photo--beanie {
-    background-image: url('media/photo/beanie.jpg');
+.photo--injection-tablet {
+    position: relative;
+    background-image: url('media/photo/injection.jpg');
     background-repeat: no-repeat;
     background-size: contain, cover;
     z-index: 5;
 }
+
+.photo--beanie {
+    background-image: url('media/photo/beanie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+
+
+.photo--syringe {
+    background-image: url('media/photo/syringe.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    z-index: 5;
+}
+
 
 
 .photo--skateboard {
