@@ -33,6 +33,9 @@ a {
     /* margin-bottom: 1.5vmax; */
 }
 
+img {
+    object-fit: contain;
+}
 
 
 /* Section 1 */

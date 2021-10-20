@@ -49,14 +49,12 @@ h1 {
 
 
 .photo--curtain {
-    grid-row: 2 / 4;
-    grid-column: 8 / 12;
+   display: none;
 }
 
 .photo--injection {
-    grid-row: 4 / 6;
-    grid-column: 8 / 10;
-    transform: translate(0vw, 4vh);
+    grid-row: 2 / 6;
+    grid-column: 8 / 12;
 }
 
 .scroll-arrow-white {
@@ -78,6 +76,10 @@ h1 {
     height: 100%;
     width: 200%;
     transform: translate(-25%, -50%);
+}
+
+.photo--syringe-phone {
+    display: none;
 }
 
 /*---------Section 2--------*/
@@ -181,6 +183,9 @@ blockquote {
     /* transform: translate(0vw, 6vh); */
 }
 
+.photo--leaning-phone {
+    display: none;
+}
 
 /*---------Results-------*/
 
@@ -294,6 +299,10 @@ ul {
 .donate__text-background p {
     max-width: 520px;
     padding: 2vw 6vw;
+}
+
+.photo--goggles-phone {
+    display: none;
 }
 
 /*------About---------*/

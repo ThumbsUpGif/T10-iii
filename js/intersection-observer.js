@@ -2,6 +2,11 @@
 // Intersection Observer
 
 
+//   <script>
+//        if (document.documentElement.clientWidth < 700) {
+//             scripts
+//        }
+//    </script>
 
 /// GENERAL
 
