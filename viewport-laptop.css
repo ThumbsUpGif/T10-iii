@@ -305,6 +305,19 @@ ul {
     display: none;
 }
 
+.button-filled {
+    padding: 0.6rem 2rem;
+    border-radius: 5%;
+    
+}
+
+.button-ghost {
+    
+    padding: 0.6rem 2rem;
+    border-radius: 5%;
+}
+
+
 /*------About---------*/
 
 .about {

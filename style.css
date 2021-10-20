@@ -145,6 +145,27 @@ ul {
 
 /*Donate*/
 
+.button-filled {
+    background: #fff;
+    color: #372528;
+    border-radius: 5%;
+    
+}
+
+.button-ghost {
+    
+    background: #372528;
+    border: solid 1px #fff;
+    border-radius: 5%;
+}
+
+.button-filled:hover,
+.button-ghost:hover {
+    filter: drop-shadow( 5px 5px 8px rgba(0, 0, 0, .7));
+}
+
+
+
 
 /*About*/
 
