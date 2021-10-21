@@ -41,7 +41,7 @@ observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
-                `animation-photo 1.2s ${entry.target.dataset.delay} forwards ease`
+                `animation-photo 1.6s ${entry.target.dataset.delay} forwards ease`
                 observer.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
