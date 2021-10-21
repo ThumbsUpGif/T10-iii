@@ -203,12 +203,23 @@ blockquote {
 .results-text {
     grid-row: 1 / 7;
     grid-column: 3 / 10;
-    transform: translate(0vw, 4vh);
+    transform: translate(0vw, 6vh);
 }
 
 ul {
     padding-left: 4vw;
 }
+
+.spacer-results-laptop {
+    width: 20vw;
+    height: 2px;
+    background-color: #fff;
+}
+
+.results .spacer {
+    display:none;
+}
+
 
 /* .scroll-arrow-white-tablet {
     display: none;
@@ -314,15 +325,13 @@ ul {
 }
 
 .button-filled {
-    padding: 0.6rem 2rem;
-    border-radius: 5%;
+    z-index: 0;
     
 }
 
 .button-ghost {
     
-    padding: 0.6rem 2rem;
-    border-radius: 5%;
+    z-index: 0;
 }
 
 
@@ -352,13 +361,11 @@ ul {
 
 .about__wrapper h3 {
     color: #111;
-    padding: 2vw 6vw;
+
 }
 
 .about__wrapper p {
     color: #111;
-    max-width: 520px;
-    padding: 2vw 6vw;
 }
 
 
@@ -372,6 +379,19 @@ ul {
     grid-row: 1 / 7;
     grid-column: 7 / 12;
     transform: translateY(6vh);
+}
+
+
+
+.about .spacer {
+    display: none;
+}
+
+.spacer-credit-laptop {
+    background-color: #fff;
+    width: 300px;
+    height: 1px;
+    
 }
 
 .scroll-arrow-top {

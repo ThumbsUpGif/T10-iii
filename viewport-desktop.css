@@ -16,12 +16,12 @@
 
 
     .spacer {
-        width: 400px;
+        width: 300px;
         transform: translateX(60px);
     }
 
     .spacer-black {
-        width: 100px;
+        width: 300px;
         transform: translateX(5vw);
     }
 
@@ -245,10 +245,15 @@ ul {
     padding-left: 4vw;
 }
 
-/* .scroll-arrow-white-tablet {
-    display: none;
-} */
+.spacer-results-laptop {
+    width: 300px;
+    height: 2px;
+    background-color: #fff;
+}
 
+.results .spacer {
+    display:none;
+}
 
 
 /*----------Kenya----------------*/
@@ -352,15 +357,13 @@ ul {
 }
 
 .button-filled {
-    padding: 0.6rem 2rem;
-    border-radius: 5%;
+    z-index: 0;
     
 }
 
 .button-ghost {
     
-    padding: 0.6rem 2rem;
-    border-radius: 5%;
+    z-index: 0;
 }
 
 
@@ -410,6 +413,15 @@ ul {
     grid-row: 1 / 7;
     grid-column: 7 / 12;
     transform: translateY(6vh);
+}
+
+.spacer-credit-laptop {
+    width: 300px;
+    transform: translateX(5vw);
+}
+
+.about .spacer {
+    display: none;
 }
 
 .scroll-arrow-top {

@@ -56,10 +56,9 @@ photos.forEach(photo => {
 
 
 
-// Section 1
 
 
-// Section When
+//////  Section 1 - When  //////
 
 const whens = document.querySelectorAll('.animation-when')
 
@@ -82,7 +81,28 @@ whens.forEach(when => {
 })
 
 
-////// Section 5
+////// Section 3 - You ////////
+
+
+const yous = document.querySelectorAll('.animation-you')
+
+observer = new IntersectionObserver((entries) => {
+    console.log(entries);
+
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.style.animation =
+                `animation-results 2s ${entry.target.dataset.delay} forwards ease`
+            observer.unobserve(entry.target)
+        } else {
+            entry.target.style.animation = `none`;
+        }
+    })
+})
+
+yous.forEach(you => {
+    observer.observe(you)
+})
 
 
 ////// Results //////

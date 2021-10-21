@@ -10,13 +10,17 @@
     }
 
     p {
-        font-weight: 200;
+        font-weight: 100;
     }
 
 
     .spacer {
         width: 60vw;
         transform: translateX(5vw);
+    }
+
+    .spacer-results-laptop {
+        display: none;
     }
 
     .max-width {
@@ -369,15 +373,16 @@ display: none;
 }
 
 .button-filled {
-    padding: 0.6rem 2rem;
-    border-radius: 5%;
+    z-index: 0;
+    
+
     
 }
 
 .button-ghost {
     
-    padding: 0.6rem 2rem;
-    border-radius: 5%;
+    z-index: 0;
+  
 }
 
 /*--------- Section 8 - About ------------*/
@@ -429,6 +434,9 @@ display: none;
 display: none;
 }
 
+.spacer-credit-laptop {
+    display: none;
+}
 
 
     /* ---- JS settings ----- */
