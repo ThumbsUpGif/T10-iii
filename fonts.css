@@ -53,3 +53,14 @@ blockquote {
     color: #fff;
     font-weight: 200;
 }
+
+
+.button-filled {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.button-ghost {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1rem;
+}

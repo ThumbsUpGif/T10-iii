@@ -1,4 +1,4 @@
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 600px) {
 
 
     html {
@@ -19,7 +19,9 @@
         transform: translateX(5vw);
     }
 
-
+    .max-width {
+        max-width: 100vw;
+}       
 
     /*---------Section 1 - Hero --------*/
 
@@ -360,6 +362,23 @@ display: none;
 display: none;
 }
 
+.button-container {
+    grid-row: 4 / 5;
+    grid-column: 7 / 12;
+    /* transform: translateY(6vh); */
+}
+
+.button-filled {
+    padding: 0.6rem 2rem;
+    border-radius: 5%;
+    
+}
+
+.button-ghost {
+    
+    padding: 0.6rem 2rem;
+    border-radius: 5%;
+}
 
 /*--------- Section 8 - About ------------*/
 

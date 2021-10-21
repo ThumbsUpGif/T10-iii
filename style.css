@@ -145,6 +145,16 @@ ul {
 
 /*Donate*/
 
+.button-container { 
+    height: 30%;
+    z-index: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
 .button-filled {
     background: #fff;
     color: #372528;

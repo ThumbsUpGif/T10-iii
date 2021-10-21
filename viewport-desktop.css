@@ -1,16 +1,48 @@
-
-@media only screen and (min-width: 961px) and (max-width: 1400px) {
-
+@media only screen and (min-width: 1401px) {
 
 
-.max-width {
-        max-width: 100vw;
-}
+    html {
+        scroll-behavior: smooth;
+    }
 
-/*---------Section 1--------*/
+    body {
+        font-size: 19px;
+    }
+
+    p {
+        font-weight: 200;
+    }
+
+
+
+    .spacer {
+        width: 400px;
+        transform: translateX(60px);
+    }
+
+    .spacer-black {
+        width: 100px;
+        transform: translateX(5vw);
+    }
+
+    .max-width {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*---------Section 1 - Hero --------*/
+
+
 
 .hero {
-    max-height: 75vw;
+    position: relative;
+    top: 0%;
+    max-height: 70vw;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
 h1 {
@@ -86,11 +118,11 @@ h1 {
 /*---------Section 2 - When --------*/
 
 .when {
-    height: 100vh;
-    max-height: 75vw;
-    width: 100vw;
+    min-height: 69vw;
+    max-height: 70vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -121,20 +153,16 @@ h1 {
     padding: 2vw 6vw;
 }
 
-.spacer {
-    transform: translateX(4vw);
-}
-
 
 /*---------Section 3 - Zambia --------*/
 
 .zambia {
     background-color: #111;
-    height: 100vh;
-    max-height: 75vw;
-    width: 100vw;
+    min-height: 59vw;
+    max-height: 60vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -153,14 +181,15 @@ blockquote {
     line-height: 1.4;
 }
 
+
 /*---------Section 4 - You ------*/
 
 .you {
-    height: 100vh;
-    max-height: 75vw;
-    width: 100vw;
+    min-height: 69vw;
+    max-height: 70vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -189,23 +218,29 @@ blockquote {
     display: none;
 }
 
+
 /*---------Results-------*/
 
 .results {
-    height: 100vh;
-    max-height: 80vw;
-    width: 100vw;
+    min-height: 69vw;
+    max-height: 70vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
 .results-text {
     grid-row: 1 / 7;
     grid-column: 3 / 10;
-    transform: translate(0vw, 4vh);
+    padding: 2vw 6vw;
+    /* transform: translateY(0vw, 4vh); */
 }
 
+.results .spacer {
+    transform: translateX(-40)
+
+}
 ul {
     padding-left: 4vw;
 }
@@ -214,6 +249,8 @@ ul {
     display: none;
 } */
 
+
+
 /*----------Kenya----------------*/
 
 .kenya-tablet {
@@ -221,11 +258,11 @@ ul {
 }
 
 .kenya {
-    height: 100vh;
-    max-height: 75vw;
-    width: 100vw;
+    min-height: 59vw;
+    max-height: 60vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -256,7 +293,7 @@ ul {
     background-position: center top;
     grid-row: 6 / 7;
     grid-column: 7 / 8;
-    transform: translate(-4vw, 10vh);
+    transform: translate(-4vw, 5rem);
 }
 
 .scroll-arrow-black:hover {
@@ -270,14 +307,15 @@ ul {
     transform: translate(-25%, -50%);
 }
 
+
 /*----------Donate----------------*/
 
 .donate {
-    height: 100vh;
-    max-height: 75vw;
-    width: 100vw;
+    min-height: 69vw;
+    max-height: 70vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -329,11 +367,11 @@ ul {
 /*------About---------*/
 
 .about {
-    height: 100vh;
-    max-height: 75vw;
-    width: 100vw;
+    min-height: 59vw;
+    max-height: 60vw;
+    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     overflow: hidden;
 }
@@ -381,7 +419,7 @@ ul {
     background-position: center top;
     grid-row: 6 / 7;
     grid-column: 2 / 3;
-    transform: translate(-4vw, 10vh);
+    transform: translate(-4vw, 5rem);
 }
 
 .scroll-arrow-top:hover {
@@ -395,4 +433,4 @@ ul {
     transform: translate(-25%, -50%);
 }
 
-}
+} /* viewport */

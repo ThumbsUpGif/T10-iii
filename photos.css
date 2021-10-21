@@ -12,7 +12,7 @@
 .photo--leaning {
     background-image: url('media/photo/leaning.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: 5;
 }
 
@@ -42,7 +42,7 @@
 .photo--beanie {
     background-image: url('media/photo/beanie.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: 5;
 }
 
@@ -50,7 +50,9 @@
 .photo--syringe {
     background-image: url('media/photo/syringe.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
     z-index: 5;
 }
 
