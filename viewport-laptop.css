@@ -65,7 +65,7 @@ h1 {
     background-position: center top;
     grid-row: 6 / 7;
     grid-column: 7 / 8;
-    transform: translate(-4vw, 6rem);
+    transform: translate(-4vw, 4.2rem);
 }
 
 .scroll-arrow-white:hover {

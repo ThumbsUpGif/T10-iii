@@ -64,7 +64,7 @@
         backdrop-filter: blur(4px);
         grid-row: 6 / 7;
         grid-column: 2 / 12;
-        transform: translateY(-4vh);
+        transform: translateY(-4rem);
         padding-top: 3vw;
         padding-left: 4vw;
         height: 12vh;
@@ -94,6 +94,10 @@ display: none;
 
     }
 
+
+    .hero .button-container {
+        min-height: 80%;
+    }
 
     .scroll-arrow-1 {
         display: block;

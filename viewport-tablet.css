@@ -97,7 +97,9 @@ h1 {
     display: none;
 }
 
-
+.hero .button-container {
+    min-height: 60%;
+}
 /*---------Section 2 - About --------*/
 
 .when {
