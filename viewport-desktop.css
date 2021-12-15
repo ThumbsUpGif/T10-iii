@@ -334,7 +334,7 @@ ul {
     background-image: linear-gradient( 170deg, hsla(350, 20%, 18%, 100) 0%, hsla(350, 20%, 18%, 0) 100%);
     grid-row: 3 / 6;
     grid-column: 7 / 12;
-    transform: translate(4vw, -6vh);
+    transform: translateX(4vw);
 }
 
 .donate__text-background h3 {
@@ -423,6 +423,7 @@ ul {
 .about .spacer {
     display: none;
 }
+
 
 .scroll-arrow-top {
     background-image: url(media/svg/down-arrow-top-1.svg);
