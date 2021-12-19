@@ -13,14 +13,14 @@
 // ///// H3 items ////
 const subheadings = document.querySelectorAll('.animation-subheading')
 
-observer = new IntersectionObserver((entries) => {
+observerSubs = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-subheading 0.3s ${entry.target.dataset.delay} forwards ease`
-                observer.unobserve(entry.target)
+                observerSubs.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -28,21 +28,21 @@ observer = new IntersectionObserver((entries) => {
 })
 
 subheadings.forEach(subheading => {
-    observer.observe(subheading)
+    observerSubs.observe(subheading)
 })
 
 
 ///// Photo ////
 const photos = document.querySelectorAll('.animation-photo')
 
-observer = new IntersectionObserver((entries) => {
+observerPhotos = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-photo 1.6s ${entry.target.dataset.delay} forwards ease`
-                observer.unobserve(entry.target)
+                observerPhotos.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -50,7 +50,7 @@ observer = new IntersectionObserver((entries) => {
 })
 
 photos.forEach(photo => {
-    observer.observe(photo)
+    observerPhotos.observe(photo)
 })
 
 
@@ -62,14 +62,14 @@ photos.forEach(photo => {
 
 const whens = document.querySelectorAll('.animation-when')
 
-observer = new IntersectionObserver((entries) => {
+observerWhen = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-results 2s ${entry.target.dataset.delay} forwards ease`
-            observer.unobserve(entry.target)
+            observerWhen.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -77,7 +77,7 @@ observer = new IntersectionObserver((entries) => {
 })
 
 whens.forEach(when => {
-    observer.observe(when)
+    observerWhen.observe(when)
 })
 
 
@@ -86,14 +86,14 @@ whens.forEach(when => {
 
 const yous = document.querySelectorAll('.animation-you')
 
-observer = new IntersectionObserver((entries) => {
+observerYou = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-results 2s ${entry.target.dataset.delay} forwards ease`
-            observer.unobserve(entry.target)
+            observerYou.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -101,7 +101,7 @@ observer = new IntersectionObserver((entries) => {
 })
 
 yous.forEach(you => {
-    observer.observe(you)
+    observerYou.observe(you)
 })
 
 
@@ -109,14 +109,14 @@ yous.forEach(you => {
 
 const results = document.querySelectorAll('.animation-results')
 
-observer = new IntersectionObserver((entries) => {
+observerResults = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-results 1s ${entry.target.dataset.delay} forwards ease`
-            observer.unobserve(entry.target)
+            observerResults.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -124,7 +124,7 @@ observer = new IntersectionObserver((entries) => {
 })
 
 results.forEach(result => {
-    observer.observe(result)
+    observerResults.observe(result)
 })
 
 
@@ -136,14 +136,14 @@ results.forEach(result => {
 
 const listItems = document.querySelectorAll('.animation-list-item')
 
-observer = new IntersectionObserver((entries) => {
+observerList = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-list-item .4s ${entry.target.dataset.delay} forwards ease`
-            observer.unobserve(entry.target)
+            observerList.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -151,7 +151,7 @@ observer = new IntersectionObserver((entries) => {
 })
 
 listItems.forEach(listItem => {
-    observer.observe(listItem)
+    observerList.observe(listItem)
 })
 
 
@@ -159,14 +159,14 @@ listItems.forEach(listItem => {
 
 const icons = document.querySelectorAll('.animation-icons')
 
-observer = new IntersectionObserver((entries) => {
+observerIcons = new IntersectionObserver((entries) => {
 console.log(entries);
 
 entries.forEach(entry => {
 if (entry.intersectionRatio > 0) {
     entry.target.style.animation =
         `results-svg 0.6s ${entry.target.dataset.delay} forwards linear`
-    observer.unobserve(entry.target)
+    observerIcons.unobserve(entry.target)
 } else {
     entry.target.style.animation = `none`;
 }
@@ -174,7 +174,7 @@ if (entry.intersectionRatio > 0) {
 })
 
 icons.forEach(icon => {
-observer.observe(icon)
+observerIcons.observe(icon)
 })       
 
 
@@ -182,14 +182,14 @@ observer.observe(icon)
 
 const donations = document.querySelectorAll('.animation-donation')
 
-observer = new IntersectionObserver((entries) => {
+observerDonations = new IntersectionObserver((entries) => {
     console.log(entries);
 
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation =
                 `animation-donation 0.6s ${entry.target.dataset.delay} forwards ease`
-            observer.unobserve(entry.target)
+            observerDonations.unobserve(entry.target)
         } else {
             entry.target.style.animation = `none`;
         }
@@ -197,7 +197,7 @@ observer = new IntersectionObserver((entries) => {
 })
 
 donations.forEach(donation => {
-    observer.observe(donation)
+    observerDonations.observe(donation)
 })
 
 
