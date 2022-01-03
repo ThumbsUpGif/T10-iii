@@ -9,7 +9,7 @@
 
 @keyframes animation-subheading {
     from {
-        transform: translateY(-2vw);
+        transform: translateY(-3vw);
         opacity: 0.4;
     }
 
